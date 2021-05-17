@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS users_info;
+
+CREATE TABLE users_info(
+id INT AUTO_INCREMENT PRIMARY KEY,
+login VARCHAR(250),
+password VARCHAR(250),
+email VARCHAR(500),
+full_name VARCHAR(500)
+)
+
