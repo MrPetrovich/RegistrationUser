@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 public class MailServiceImpl implements MailService {
 
     private final UserInfoService userInfoService;
-
+    /*метод заглушка для отправки мэила с результатами проверки от стороннего сервиса*/
     @Override
     public void prepareAndSendEmail(String key, String response) throws UserInfoException {
         UserInfo userInfo = userInfoService.findById(Integer.valueOf(key));

@@ -19,7 +19,8 @@ public class RegistrationServiceImpl implements RegistrationService {
     private final UserInfoService userInfoService;
 
     private final KafkaProducer kafkaProducerService;
-
+    /*метод регистрации пользователя
+    * происходит сохранение в бд и отправка через Kafka на проверку*/
     @Override
     public void registration(String login, String password, String email, String fullName){
         UserInfo userInfo = new UserInfo();

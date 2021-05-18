@@ -35,6 +35,6 @@ class UserInfoServiceImplTest {
     }
 
     @Test
-    void getAllUsers() {
+    void findByIdTest() {
     }
 }
